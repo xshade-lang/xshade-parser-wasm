@@ -1,0 +1,17 @@
+[package]
+name = "xshade-parser-wasm"
+version = "0.1.0"
+authors = ["Andreas Fischer <vengarioth@googlemail.com>", "Marc-Anton Boehm-von Thenen <boehm.marc.anton@gmail.com>"]
+description = "WASM wrapper for the parser and untyped AST of the xshade language."
+license = "MIT"
+repository = "https://github.com/xshade-lang/xshade-parser-wasm"
+readme = "readme.md"
+keywords = ["xshade", "graphics", "rendering", "vulkan", "spir-v"]
+categories = ["rendering"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+xshade-parser = "0.1"
+wasm-bindgen="0.2"
